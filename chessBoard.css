@@ -1,0 +1,56 @@
+h1{
+    text-align: center;
+}
+
+button{
+    background-color: rgb(136, 214, 136);
+    color: white;
+    width: 100px;
+    height: 53px;
+    border-radius: 10px;
+}
+
+.chessboard {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    border: 25px solid rgb(7, 59, 42);
+}
+.black{
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(141, 187, 247);
+    font-size: 50px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    z-index: 1;
+}
+.white{
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(252, 252, 252);
+    font-size: 50px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    z-index: 1;
+}
+
+.white:hover{
+    background-color: yellow;
+}
+
+.black:hover{
+    background-color: yellow;
+}
+
+p{
+    z-index: 2;
+    font-size: 50px;
+}
+
+
+

@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <link href="chessBoard.css" rel="stylesheet">
+    <title>Chessboard</title>
+    </head>
+<body style="background-color:rgb(253, 227, 228);">
+    <h1>
+        <u>Chess Game</u>
+    </h1>
+    <div class="chessboard">
+        <!--First Row-->
+        <div class="black" id="tile1">♖</div>
+        <div class="white" id="tile2">♘</div>
+        <div class="black" id="tile3">♗</div>
+        <div class="white" id="tile4">♔</div>
+        <div class="black" id="tile5">♕</div>
+        <div class="white" id="tile6">♗</div>
+        <div class="black" id="tile7">♘</div>
+        <div class="white" id="tile8">♖</div>
+        <!--Second Row-->
+        <div class="white" id="tile9">♙</div>
+        <div class="black" id="tile10">♙</div>
+        <div class="white" id="tile11">♙</div>
+        <div class="black" id="tile12">♙</div>
+        <div class="white" id="tile13">♙</div>
+        <div class="black" id="tile14">♙</div>
+        <div class="white" id="tile15">♙</div>
+        <div class="black" id="tile16">♙</div>
+        <!--Third Row-->
+        <div class="black" id="tile17"></div>
+        <div class="white" id="tile18"></div>
+        <div class="black" id="tile19"></div>
+        <div class="white" id="tile20"></div>
+        <div class="black" id="tile21"></div>
+        <div class="white" id="tile22"></div>
+        <div class="black" id="tile23"></div>
+        <div class="white" id="tile24"></div>
+        <!--Fourth Row-->
+        <div class="white" id="tile25"></div>
+        <div class="black" id="tile26" onclick="pawnMove2()"></div>
+        <div class="white" id="tile27"></div>
+        <div class="black" id="tile28"></div>
+        <div class="white" id="tile29"></div>
+        <div class="black" id="tile30"></div>
+        <div class="white" id="tile31"></div>
+        <div class="black" id="tile32"></div>
+        <!--Fifth Row-->
+        <div class="black" id="tile33" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="white" id="tile34"></div>
+        <div class="black" id="tile35"></div>
+        <div class="white" id="tile36"></div>
+        <div class="black" id="tile37"></div>
+        <div class="white" id="tile38"></div>
+        <div class="black" id="tile39"></div>
+        <div class="white" id="tile40"></div>
+        <!--Sixth Row-->
+        <div class="white" id="tile41" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="black" id="tile42"></div>
+        <div class="white" id="tile43"></div>
+        <div class="black" id="tile44"></div>
+        <div class="white" id="tile45"></div>
+        <div class="black" id="tile46"></div>
+        <div class="white" id="tile47"></div>
+        <div class="black" id="tile48" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <!--Seventh Row-->
+        <div class="black" id="tile49" draggable="true" ondragstart="drag(event)">♟</div>
+        <div class="white" id="tile50">♟</div>
+        <div class="black" id="tile51">♟</div>
+        <div class="white" id="tile52">♟</div>
+        <div class="black" id="tile53">♟</div>
+        <div class="white" id="tile54">♟</div>
+        <div class="black" id="tile55">♟</div>
+        <div class="white" id="tile56">♟</div>
+        <!--Eighth Row-->
+        <div class="white" id="tile57">♜</div>
+        <div class="black" id="tile58">♞</div>
+        <div class="white" id="tile59">♝</div>
+        <div class="black" id="tile60">♚</div>
+        <div class="white" id="tile61">♛</div>
+        <div class="black" id="tile62">♝</div>
+        <div class="white" id="tile63">♞</div>
+        <div class="black" id="tile64">♜</div>
+    </div>
+    <!--Handle search-->
+    <button onClick="history.go(0);">Click here to restart the game</button>
+</body>
+
+    <script src="chessLogic.js"></script>
+</html>
+
+<!--3/16/22:
+Wanting to kill ourselves...
+Whole tiles move instead of just piece itself
+Look into hierarchy next time
+-->
+
